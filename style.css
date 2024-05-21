@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 *::selection {
@@ -110,7 +111,7 @@ h3::selection {
 /* END SLIDER */
 
 /* SECTIONS */
-section.ShortInfo h1 {
+section.ShortInfo h1{
     /*only for tegs h1 in sections "ShortInfo" and "Drinks" */
     text-align: center;
     font-size: 38px;
@@ -149,7 +150,6 @@ div.s1 {
 /* END SECTION "ShortInfo" */
 /* SECTION "Drinks" */
 section.Drinks h1 {
-    width: auto;
     text-align: right;
     font-size: 38px;
     background-color: #33333309;

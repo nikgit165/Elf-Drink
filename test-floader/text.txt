@@ -1,0 +1,41 @@
+        <section class="TabDrinks">
+            <div class="tab">
+                <button class="tablinks" onclick="openTea(event, 'Black')">Чорний</button>
+                <button class="tablinks" onclick="openTea(event, 'White')">Білий</button>
+                <button class="tablinks" onclick="openTea(event, 'Green')">Злений</button>
+                <button class="tablinks" onclick="openTea(event, 'Yellow')">Жовтий</button>
+                <button class="tablinks" onclick="openTea(event, 'Oolong')">Улун</button>
+                <button class="tablinks" onclick="openTea(event, 'Puerh')">Пуєр</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="Black" class="tabcontent">
+                <h3>Black Tea</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="White" class="tabcontent">
+                <h3>White Tea</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Green" class="tabcontent">
+                <h3>Green Tea</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="Yellow" class="tabcontent">
+                <h3>Yellow Tea</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Oolong" class="tabcontent">
+                <h3>Oolong Tea</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Puerh" class="tabcontent">
+                <h3>Pu-erh Tea</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </section>

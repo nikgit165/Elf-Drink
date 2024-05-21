@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elf Drinks - Tea</title>
+    <link rel="stylesheet" href="/pages/tea/style-tea.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="nav">
+                <nav>
+                    <div class="navbar">
+                        <a href="/index.html">Home</a>
+                        <a href="/news.html">News</a>
+                        <div class="dropdown"><!-- tea -->
+                            <button class="dropbtn" onclick="redirectToTea()">Tea
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Black Tea</a>
+                                <a href="#">White Tea</a>
+                                <a href="#">Green Tea</a>
+                            </div>
+                        </div>
+                        <div class="dropdown"> <!-- coffe -->
+                            <button class="dropbtn" onclick="redirectToCoffe()">Coffe
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Latte</a>
+                                <a href="#">Cappuccino</a>
+                                <a href="#">Macchiato</a>
+                            </div>
+                        </div>
+                        <div class="dropdown"><!-- coctails -->
+                            <button class="dropbtn" onclick="redirectToCoctails()">Coctails
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Old Fashioned</a>
+                                <a href="#">Negroni</a>
+                                <a href="#">Daiquiri</a>
+                            </div>
+                        </div>
+                        <div class="dropdown"><!-- alcohol -->
+                            <button class="dropbtn" onclick="redirectToAlcohol()">Alcohol
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Old Fashioned</a>
+                                <a href="#">Negroni</a>
+                                <a href="#">Daiquiri</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="slider">
+                <img class="headerimg" src="/img/land/tealand (3).jpg" alt="tea land">
+                <div class="logo"><img class="img-logo" src="/img/tea-logo.png" alt="Logo-tea"></div>
+            </div>
+        </header>
+        <section class="ShortInfo">
+            <h1>Коротка інформація про нас</h1>
+            <div class="s1">
+                <p>Elf Drinks - це мережа барів, де ви можете насолоджуватися різноманітними напоями у чарівній
+                    атмосфері.<br>
+                    Наші бари пропонують широкий вибір коктейлів, вин, пива та безалкогольних напоїв, які задовольнять
+                    навіть найвибагливіших гостей.<br>
+                    Наші бармени-ельфи майстерно змішують інгредієнти, створюючи неповторні смакові враження, а
+                    обслуговування на рівні відповідає найвищим стандартам гостинності.<br>
+                    Незалежно від того, чи ви шукаєте місце для романтичного побачення, дружній вечір або просто
+                    відпочинок після важкого дня, Elf Drinks - ідеальне місце для вас.<br>
+                    Завітайте до нас і відчуйте справжню ельфійську чарівність у кожному ковтку!</p>
+                <img src="/img/sections_img/bar_1.png" alt="s1-img" class="s1-img">
+            </div>
+            <div class="s2">
+                <p>Крім того, у наших барах ви зможете насолоджуватися не лише вишуканими напоями, але й приємною
+                    музикою та розважальними заходами.<br>
+                    Ми часто організовуємо вечори живої музики, дегустаційні події та тематичні вечірки, щоб кожен візит
+                    у Elf Drinks став для вас незабутнім враженням.<br>
+                    Наші заклади розташовані у зручних локаціях з привабливим інтер'єром та дружнім персоналом, завдяки
+                    чому ви завжди зможете відчути себе комфортно та зірваною з реальності.<br>
+                    Приходьте до Elf Drinks і дозвольте собі трошки магії у вашому житті!</p>
+                <img src="/img/sections_img/bar_2.jpg" alt="s1-img" class="s2-img">
+            </div>
+        </section>
+        <br>
+        <section class="Drinks">
+            <h1>Що ми пропонуемо</h1>
+            <div class="cards">
+                <div class="Tea">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/fff.png" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Tea</h2>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Coffe">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/fff.png" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Coffe</h2>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Coctails">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/fff.png" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Coctails</h2>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Alcohol">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/fff.png" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Alcohol</h2>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="TabDrinks">
+            <p class="tabMainText">6 основних видів чаю</p>
+            <div class="tab">
+                <button class="tablinks" onclick="openTea(event, 'Black')">Чорний</button>
+                <button class="tablinks" onclick="openTea(event, 'White')">Білий</button>
+                <button class="tablinks" onclick="openTea(event, 'Green')">Злений</button>
+                <button class="tablinks" onclick="openTea(event, 'Yellow')">Жовтий</button>
+                <button class="tablinks" onclick="openTea(event, 'Oolong')">Улун</button>
+                <button class="tablinks" onclick="openTea(event, 'Puerh')">Пуєр</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="Black" class="tabcontent">
+                <h3>Black Tea</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="White" class="tabcontent">
+                <h3>White Tea</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Green" class="tabcontent">
+                <h3>Green Tea</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="Yellow" class="tabcontent">
+                <h3>Yellow Tea</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Oolong" class="tabcontent">
+                <h3>Oolong Tea</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Puerh" class="tabcontent">
+                <h3>Pu-erh Tea</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <br>
+        </section>
+        <footer>
+            <div class="oneFooter">
+                <h2>Navigation</h2>
+                <br>
+                <ul>
+                    <li><a class="ahref" href="#">Home</a></li>
+                    <li><a class="ahref" href="#">News</a></li>
+                    <li><a class="ahref" href="#">Tea</a></li>
+                    <li><a class="ahref" href="#">Coffe</a></li>
+                    <li><a class="ahref" href="#">Coctails</a></li>
+                    <li><a class="ahref" href="#">Alcohol</a></li>
+                </ul>
+            </div>
+            <div class="twoFooter">
+                <h2>Contact</h2>
+                <br>
+                <ul>
+                    <li>Номер телефона: +380 123 345 6789<br></li>
+                    <li>Пошта: test@gmail.com</li>
+                    <li>Адрес головного офісу:<br><a class="ahref" href="https://maps.app.goo.gl/HvoX8pzNu5vu9Qse7">1600
+                            Pennsylvania Avenue NW, Washington, DC 20500, США</a></li>
+                </ul>
+            </div>
+            <div class="threeFooter">
+                <img src="/img/tea-logo.png" alt="footer-logo">
+            </div>
+        </footer>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
