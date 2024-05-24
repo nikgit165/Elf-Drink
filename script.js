@@ -20,8 +20,8 @@ function redirectToAlcohol() {
 }
 // ---------- End Links to sub-pages ----------
 
-// ---------- Tabs content Tea ----------
-function openTea(evt, teaName) {
+// ---------- Tabs content ----------
+function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -34,7 +34,7 @@ function openTea(evt, teaName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    document.getElementById(teaName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-// ---------- End content Tea ----------
+// ---------- End content ----------

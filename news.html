@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elf Drinks - News</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style-news.css">
 </head>
 <body>
-    NEWS
+    <main>
+        <header>
+            <div class="nav">
+                <nav>
+                    <div class="navbar">
+                        <a href="/index.html">Home</a>
+                        <a href="/news.html">News</a>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="redirectToTea()">Tea
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="/pages/tea/main-tea.html#Drinks">Black Tea</a>
+                                <a href="/pages/tea/main-tea.html#Drinks">White Tea</a>
+                                <a href="/pages/tea/main-tea.html#Drinks">Green Tea</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="redirectToCoffe()">Coffe
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="/pages/coffe/main-coffe.html#Drinks">Latte</a>
+                                <a href="/pages/coffe/main-coffe.html#Drinks">Cappuccino</a>
+                                <a href="/pages/coffe/main-coffe.html#Drinks">Macchiato</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="redirectToCoctails()">Coctails
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="/pages/coctails/main-coctails.html#Drinks">Old Fashioned</a>
+                                <a href="/pages/coctails/main-coctails.html#Drinks">Negroni</a>
+                                <a href="/pages/coctails/main-coctails.html#Drinks">Daiquiri</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="redirectToAlcohol()">Alcohol
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="/pages/alcohol/main-alcohol.html#Drinks">Old Fashioned</a>
+                                <a href="/pages/alcohol/main-alcohol.html#Drinks">Negroni</a>
+                                <a href="/pages/alcohol/main-alcohol.html#Drinks">Daiquiri</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="slider">
+                <img class="headerimg" src="/img/land/tealand (3).jpg" alt="news land">
+                <div class="logo"><img class="img-logo" src="/img/tea-logo.png" alt="Logo-tea"></div>
+            </div>
+        </header>
+        <section class="NewsSection">
+            <h1>Новини Elf Drinks</h1>
+            <div class="newsItem">
+                <h2>Нова лінія коктейлів</h2>
+                <p>Ми раді повідомити, що з наступного тижня у всіх наших закладах з'явиться нова лінія коктейлів. Завітайте та спробуйте новинки!</p>
+                <img src="/img/news/news1.jpg" alt="New Cocktails" class="news-img">
+            </div>
+            <div class="newsItem">
+                <h2>Вечори живої музики</h2>
+                <p>Приєднуйтесь до наших музичних вечорів кожної п'ятниці та суботи. Жива музика створить неповторну атмосферу для вашого відпочинку.</p>
+                <img src="/img/news/news2.jpg" alt="Live Music" class="news-img">
+            </div>
+            <div class="newsItem">
+                <h2>Відкриття нового бару</h2>
+                <p>Ми раді оголосити про відкриття нового бару у центрі міста. Приходьте на урочисте відкриття та отримайте спеціальні пропозиції!</p>
+                <img src="/img/news/news3.jpg" alt="New Bar Opening" class="news-img">
+            </div>
+        </section>
+        <footer>
+            <div class="oneFooter">
+                <h2>Navigation</h2>
+                <br>
+                <ul>
+                    <li><a class="ahref" href="/index.html">Home</a></li>
+                    <li><a class="ahref" href="/news.html">News</a></li>
+                    <li><a class="ahref" href="/pages/tea/main-tea.html">Tea</a></li>
+                    <li><a class="ahref" href="/pages/coffe/main-coffe.html">Coffe</a></li>
+                    <li><a class="ahref" href="/pages/coctails/main-coctails.html">Coctails</a></li>
+                    <li><a class="ahref" href="/pages/alcohol/main-alcohol.html">Alcohol</a></li>
+                </ul>
+            </div>
+            <div class="twoFooter">
+                <h2>Contact</h2>
+                <br>
+                <ul>
+                    <li>Номер телефона: +380 123 345 6789<br></li>
+                    <li>Пошта: test@gmail.com</li>
+                    <li>Адрес головного офісу:<br><a class="ahref" href="https://maps.app.goo.gl/HvoX8pzNu5vu9Qse7">1600
+                            Pennsylvania Avenue NW, Washington, DC 20500, США</a></li>
+                </ul>
+            </div>
+            <div class="threeFooter">
+                <img src="/img/tea-logo.png" alt="footer-logo">
+            </div>
+        </footer>
+    </main>
+    <script src="/script.js"></script>
 </body>
 </html>

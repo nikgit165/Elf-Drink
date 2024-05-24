@@ -1,0 +1,41 @@
+/* News Section */
+.NewsSection {
+    padding: 20px;
+}
+
+.NewsSection h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.newsItem {
+    margin-bottom: 30px;
+}
+
+.newsItem h2 {
+    font-size: 24px;
+    color: #669934;
+}
+
+.newsItem p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.news-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+section.ShortInfo,
+section.Drinks {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+section.ShortInfo h1 {
+    text-align: center;
+    font-size: 38px;
+    background-color: #33333309;
+}
