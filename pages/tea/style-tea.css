@@ -7,6 +7,11 @@ img.headerimg{
 height: 600px;
 }
 /* END Header */
+/* SECTION */
+section.TabDrinks{
+    padding: 50px;
+}
+/* END SECTION */
 /* section TABS DRINKS */
 section.TabDrinks p.tabMainText{
 font-size: 38px;
