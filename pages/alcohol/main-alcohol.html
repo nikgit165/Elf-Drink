@@ -1,12 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style-alcohol.css">
+    <title>Elf Drinks - Tea</title>
+    <link rel="stylesheet" href="/pages/tea/style-tea.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-    Alcohol
+    <main>
+        <header>
+            <div class="nav">
+                <nav>
+                    <div class="navbar">
+                        <a href="/index.html">Home</a>
+                        <a href="/news.html">News</a>
+                        <div class="dropdown"><!-- tea -->
+                            <button class="dropbtn" onclick="redirectToTea()">Tea
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Black Tea</a>
+                                <a href="#">White Tea</a>
+                                <a href="#">Green Tea</a>
+                            </div>
+                        </div>
+                        <div class="dropdown"> <!-- coffe -->
+                            <button class="dropbtn" onclick="redirectToCoffe()">Coffe
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Latte</a>
+                                <a href="#">Cappuccino</a>
+                                <a href="#">Macchiato</a>
+                            </div>
+                        </div>
+                        <div class="dropdown"><!-- coctails -->
+                            <button class="dropbtn" onclick="redirectToCoctails()">Coctails
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Old Fashioned</a>
+                                <a href="#">Negroni</a>
+                                <a href="#">Daiquiri</a>
+                            </div>
+                        </div>
+                        <div class="dropdown"><!-- alcohol -->
+                            <button class="dropbtn" onclick="redirectToAlcohol()">Alcohol
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Old Fashioned</a>
+                                <a href="#">Negroni</a>
+                                <a href="#">Daiquiri</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="slider">
+                <img class="headerimg" src="/img/land/tealand (3).jpg" alt="tea land">
+                <div class="logo"><img class="img-logo" src="/img/tea-logo.png" alt="Logo-tea"></div>
+            </div>
+        </header>
+        <section class="ShortInfo">
+            <h1>Коротка інформація про нас</h1>
+            <div class="s1">
+                <p>Elf Drinks - це мережа барів, де ви можете насолоджуватися різноманітними напоями у чарівній
+                    атмосфері.<br>
+                    Наші бари пропонують широкий вибір коктейлів, вин, пива та безалкогольних напоїв, які задовольнять
+                    навіть найвибагливіших гостей.<br>
+                    Наші бармени-ельфи майстерно змішують інгредієнти, створюючи неповторні смакові враження, а
+                    обслуговування на рівні відповідає найвищим стандартам гостинності.<br>
+                    Незалежно від того, чи ви шукаєте місце для романтичного побачення, дружній вечір або просто
+                    відпочинок після важкого дня, Elf Drinks - ідеальне місце для вас.<br>
+                    Завітайте до нас і відчуйте справжню ельфійську чарівність у кожному ковтку!</p>
+                <img src="/img/sections_img/bar_1.png" alt="s1-img" class="s1-img">
+            </div>
+            <div class="s2">
+                <p>Крім того, у наших барах ви зможете насолоджуватися не лише вишуканими напоями, але й приємною
+                    музикою та розважальними заходами.<br>
+                    Ми часто організовуємо вечори живої музики, дегустаційні події та тематичні вечірки, щоб кожен візит
+                    у Elf Drinks став для вас незабутнім враженням.<br>
+                    Наші заклади розташовані у зручних локаціях з привабливим інтер'єром та дружнім персоналом, завдяки
+                    чому ви завжди зможете відчути себе комфортно та зірваною з реальності.<br>
+                    Приходьте до Elf Drinks і дозвольте собі трошки магії у вашому житті!</p>
+                <img src="/img/sections_img/bar_2.jpg" alt="s1-img" class="s2-img">
+            </div>
+        </section>
+        <br>
+        <section class="Drinks">
+            <p class="Drinks" id="Drinks">Що ми пропонуемо</p>
+            <div class="cards">
+                <div class="Tea">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/alchol2.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Саке</h2>
+                                <p>Напій містить амінокислоти, яких у 7 разів більше, ніж у червоному вині. Ці кислоти позитивно впливають на імунну систему, зміцнюють її і перешкоджають розвитку злоякісних утворень.</p>
+                                <p>We love that alcohol</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Coffe">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/alchol1.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Егермейстер\Jägermeister</h2>
+                                <p>Jägermeister, як і багато інших біттерів, вважається таким, що сприяє травленню. Вживається охолодженим д о-18°С у чистому вигляді (крижаний шот), залпом (як дижестив) або в коктейлях.</p>
+                                <p>We love that alcohol</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Coctails">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/alchol3.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Віскі</h2>
+                                <p>Антиоксиданти в хімічному складі віскі можуть допомогти знизити небезпеку серцевого нападу, знижуючи поганий холестерин, і навіть підвищуючи хороший холестерин</p>
+                                <p>We love that alcohol</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Alcohol">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/alchol4.png" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Медове вино «Сікера»</h2>
+                                <p>Унікальний алкогольний напій, створений на основі меду, соків фруктів і ягід першого віджиму, без додавання спирту та цукру.</p>
+                                <p>We love that alcohol</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="TabDrinks">
+            <p class="tabMainText">6 основних видів Алкоголю</p>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Black')">Лікеро-горілочні вироби</button>
+                <button class="tablinks" onclick="openTab(event, 'White')">Слабоалкогольні напої</button>
+                <button class="tablinks" onclick="openTab(event, 'Green')">Ігристі вина</button>
+                <button class="tablinks" onclick="openTab(event, 'Yellow')">Вино</button>
+                <button class="tablinks" onclick="openTab(event, 'Oolong')">Коньяк</button>
+                <button class="tablinks" onclick="openTab(event, 'Puerh')">Пиво</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="Black" class="tabcontent">
+                <h3>Лікеро-горілочні вироби</h3>
+                <p>
+                    Лікеро-горілочні вироби – це категорія алкогольних напоїв, що включає горілку, лікери, бренді, ром, джин, текілу та інші міцні алкогольні напої. Вони відрізняються високим вмістом алкоголю та різноманітністю смакових і ароматичних властивостей.
+                </p>
+            </div>
+
+            <div id="White" class="tabcontent">
+                <h3>Слабоалкогольні напої</h3>
+                <p>
+                    Слабоалкогольні напої, такі як сидр, алкогольні коктейлі та ель, зазвичай містять до 7% алкоголю. Вони часто мають солодший смак і легшу текстуру, ніж традиційні алкогольні напої. Слабоалкогольні напої можуть бути привабливими для людей, які віддають перевагу легшому та менш насиченому алкогольному напою. Проте, вони також можуть містити багато цукру, що слід враховувати при вживанні.
+                </p>
+            </div>
+
+            <div id="Green" class="tabcontent">
+                <h3>Ігристі вина</h3>
+                <p>
+                    Ігристі вина, такі як шампанське, просекко і каву, характеризуються наявністю бульбашок вуглекислого газу, які утворюються під час вторинної ферментації. Вони зазвичай містять від 10 до 12% алкоголю. Ігристі вина часто асоціюються з урочистими подіями і святами. Їх смак може варіюватися від сухого (брют) до солодкого (демі-сек), а аромати включають фруктові та квіткові нотки.
+                </p>
+            </div>
+
+            <div id="Yellow" class="tabcontent">
+                <h3>Вино</h3>
+                <p>
+                    Вино виготовляється шляхом ферментації виноградного соку. Існують червоні, білі та рожеві вина, які відрізняються за смаком, ароматом і кольором в залежності від сорту винограду та технології виробництва. Вино містить від 8 до 15% алкоголю і багате антиоксидантами, такими як ресвератрол, які можуть мати позитивний вплив на здоров'я серця при помірному вживанні. Вино також є важливим елементом багатьох кулінарних традицій.
+                </p>
+            </div>
+
+            <div id="Oolong" class="tabcontent">
+                <h3>Коньяк</h3>
+                <p>
+                    Коньяк — це різновид бренді, вироблений в однойменному регіоні Франції. Він виготовляється шляхом подвійної дистиляції білого вина і витримується в дубових бочках. Коньяк має складний аромат з нотками ванілі, фруктів і спецій, а також міцний, багатий смак. Міцність коньяку зазвичай становить близько 40% алкоголю. Коньяк часто вживають як дижестив, а також використовують в кулінарії для додання аромату стравам.
+                </p>
+            </div>
+
+            <div id="Puerh" class="tabcontent">
+                <h3>Пиво</h3>
+                <p>
+                    Пиво — один з найстаріших і найпопулярніших алкогольних напоїв у світі. Виробляється шляхом бродіння ячмінного солоду з додаванням хмелю, дріжджів і води. Пиво буває різних сортів, від світлого лагера до темного стаута. Зазвичай містить від 4 до 6% алкоголю. Пиво також багате вітамінами групи B і антиоксидантами, але при надмірному вживанні може призвести до збільшення ваги і проблем зі здоров'ям.
+                </p>
+            </div>
+            <br>
+        </section>
+        <footer>
+            <div class="oneFooter">
+                <h2>Navigation</h2>
+                <br>
+                <ul>
+                    <li><a class="ahref" href="/index.html">Home</a></li>
+                    <li><a class="ahref" href="/news.html">News</a></li>
+                    <li><a class="ahref" href="/pages/tea/main-tea.html">Tea</a></li>
+                    <li><a class="ahref" href="/pages/coffe/main-coffe.html">Coffe</a></li>
+                    <li><a class="ahref" href="/pages/coctails/main-coctails.html">Coctails</a></li>
+                    <li><a class="ahref" href="/pages/alcohol/main-alcohol.html">Alcohol</a></li>
+                </ul>
+            </div>
+            <div class="twoFooter">
+                <h2>Contact</h2>
+                <br>
+                <ul>
+                    <li>Номер телефона: +380 123 345 6789<br></li>
+                    <li>Пошта: test@gmail.com</li>
+                    <li>Адрес головного офісу:<br><a class="ahref" href="https://maps.app.goo.gl/HvoX8pzNu5vu9Qse7">1600
+                            Pennsylvania Avenue NW, Washington, DC 20500, США</a></li>
+                </ul>
+            </div>
+            <div class="threeFooter">
+                <img src="/img/tea-logo.png" alt="footer-logo">
+            </div>
+        </footer>
+    </main>
+    <script src="/script.js"></script>
 </body>
 </html>
