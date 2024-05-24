@@ -1,12 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/pages/tea/style-coffe.css">
+    <title>Elf Drinks - Tea</title>
+    <link rel="stylesheet" href="/pages/tea/style-tea.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-    Coffe
+    <main>
+        <header>
+            <div class="nav">
+                <nav>
+                    <div class="navbar">
+                        <a href="/index.html">Home</a>
+                        <a href="/news.html">News</a>
+                        <div class="dropdown"><!-- tea -->
+                            <button class="dropbtn" onclick="redirectToTea()">Tea
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Black Tea</a>
+                                <a href="#">White Tea</a>
+                                <a href="#">Green Tea</a>
+                            </div>
+                        </div>
+                        <div class="dropdown"> <!-- coffe -->
+                            <button class="dropbtn" onclick="redirectToCoffe()">Coffe
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Latte</a>
+                                <a href="#">Cappuccino</a>
+                                <a href="#">Macchiato</a>
+                            </div>
+                        </div>
+                        <div class="dropdown"><!-- coctails -->
+                            <button class="dropbtn" onclick="redirectToCoctails()">Coctails
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Old Fashioned</a>
+                                <a href="#">Negroni</a>
+                                <a href="#">Daiquiri</a>
+                            </div>
+                        </div>
+                        <div class="dropdown"><!-- alcohol -->
+                            <button class="dropbtn" onclick="redirectToAlcohol()">Alcohol
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Old Fashioned</a>
+                                <a href="#">Negroni</a>
+                                <a href="#">Daiquiri</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="slider">
+                <img class="headerimg" src="/img/land/tealand (3).jpg" alt="tea land">
+                <div class="logo"><img class="img-logo" src="/img/tea-logo.png" alt="Logo-tea"></div>
+            </div>
+        </header>
+        <section class="ShortInfo">
+            <h1>Коротка інформація про нас</h1>
+            <div class="s1">
+                <p>
+                    Elf Drinks - це мережа барів, де ви можете насолоджуватися різноманітними напоями у чарівній атмосфері.
+                    Наші бари пропонують широкий вибір кавових напоїв, від класичних еспресо та капучино до екзотичних кавових сумішей, які задовольнять навіть найвибагливіших гостей. Наші бариста-ельфи майстерно готують каву, створюючи неповторні смакові враження, а обслуговування на рівні відповідає найвищим стандартам гостинності. Незалежно від того, чи ви шукаєте місце для ранкової кави, дружнього спілкування або відпочинку після важкого дня, Elf Drinks - ідеальне місце для вас.
+                    Завітайте до нас і відчуйте справжню ельфійську чарівність у кожній чашці!
+                </p>
+                <img src="/img/sections_img/bar_1.png" alt="s1-img" class="s1-img">
+            </div>
+            <div class="s2">
+                <p>
+                    Крім того, у наших барах ви зможете насолоджуватися не лише вишуканою кавою, але й приємною музикою та розважальними заходами.
+                    Ми часто організовуємо вечори живої музики, кавові дегустації та тематичні вечори, щоб кожен візит у Elf Drinks став для вас незабутнім враженням.
+                    Наші заклади розташовані у зручних локаціях з привабливим інтер'єром та дружнім персоналом, завдяки чому ви завжди зможете відчути себе комфортно та зірваною з реальності.
+                    Приходьте до Elf Drinks і дозвольте собі трошки магії у вашому житті!
+                </p>
+                <img src="/img/sections_img/bar_2.jpg" alt="s1-img" class="s2-img">
+            </div>
+        </section>
+        <br>
+        <section class="Drinks">
+            <p class="Drinks" id="Drinks">Що ми пропонуемо</p>
+            <div class="cards">
+                <div class="Tea">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/coffe.webp" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Флет уайт</h2>
+                                <p>Кавовий напій, що складається з несильно спіненого молока і подвійної порції еспресо. На 110 мл молока припадає приблизно 60 мл кави. Від латте або капучино він відрізняється більш вираженим кавовим смаком з властивою гіркуватістю і м'яким молочним присмаком.</p>
+                                <p>We love that coffe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Coffe">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/coffe1.png" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Американо</h2>  
+                                <p>Це розбавлений водою еспресо. Вода доливається в уже приготовану каву, завдяки чому зникає властива еспресо гіркота, а аромат стає більш м'яким.</p>
+                                <p>We love that coffe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Coctails">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/coffe2.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Эспрессо</h2>
+                                <p>Еспресо особливо багатий антиоксидантами, які можуть запобігти розвитку раку, значно знижує ризик розвитку таких захворювань, як деменція, хвороби Альцгеймера</p>
+                                <p>We love that coffe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Alcohol">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks//coffe3.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Латте</h2>
+                                <p>випиваючи чашку кави з молоком вони отримуємо куди більше вітамінів і мінералів, ніж випиваючи звичайний чорний кави.</p>
+                                <p>We love that coffe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="TabDrinks">
+            <p class="tabMainText">6 основних видів кофе</p>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Black')">Дрип-кофе</button>
+                <button class="tablinks" onclick="openTab(event, 'White')">Колд брю кофе</button>
+                <button class="tablinks" onclick="openTab(event, 'Green')">Нитро-кофе</button>
+                <button class="tablinks" onclick="openTab(event, 'Yellow')">Джезва, или кофе в турке</button>
+                <button class="tablinks" onclick="openTab(event, 'Oolong')">Приоритет домашнему завариванию</button>
+                <button class="tablinks" onclick="openTab(event, 'Puerh')">Время экспериментов</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="Black" class="tabcontent">
+                <h3>Дрип-кофе</h3>
+                <p>
+                    Кава-дрип являє собою натуральну каву, обсмажену і мелену, розфасовану в порційні пакети. Щоб приготувати свій улюблений напій, не потрібно ніякого спеціального обладнання, особливих навичок або обладнання. Дріп-каву легко і просто приготувати де і будь-коли. Гаряча вода, склянка або чашка, дріп-пакет з вже вбудованим фільтром - найзручніший і найсучасніший з новомодних методів заварювання.
+                    До речі, така кава тепер продається не тільки в мас-маркеті, а й у кав'ярнях, особливо спешелті-сегменту. Кава зберігається в азотному середовищі, а значить, смак його залишається яскравим і насиченим, навіть якщо купили ви пакет сьогодні, а заварили його через тиждень. У рекламних компаніях люблять говорити про те, що дріп-каву зручно брати з собою у подорожі та тривалі поїздки – так і є! Можна насолоджуватися улюбленим напоєм навіть далеко від дому – без особливих витрат.
+                </p>
+            </div>
+
+            <div id="White" class="tabcontent">
+                <h3>Колд брю кофе</h3>
+                <p>
+                    Являє собою особливий спосіб заварювання кави, коли його заливають водою кімнатної температури і дають наполягати певну кількість часу. Кава не нагрівається, подається холодною, а значить, це чудова альтернатива каві з льодом. До того ж, чаклунку за своєю суттю - кавовий концентр, а значить його можна фасувати в пляшки і продавати для подальшого відстроченого споживання. Коли вам захочеться якісної чорної кави, ви просто наллєте 50-60 мл концентрату в чашку, додайте холодної води (або молока, тут вже на ваш смак) і отримайте той напій, до якого звикли. Нерозбавлений, ясний смак, приємний аромат та цікавий післясмак – ось кінцевий результат такого продукту.
+                </p>
+            </div>
+
+            <div id="Green" class="tabcontent">
+                <h3>Нитро-кофе</h3>
+                <p> 
+                    Найсучасніший із трендів, що зародилися в кав'ярнях третьої хвилі в останні роки. Нітро-кава переживає другий пік своєї популярності (перший стався у США у 2016 році). Це кава, яка також заварюється холодною екстракцією (як і чаклунку), а потім насичується азотом. За рахунок такого приготування кави виходить особливо насиченою, з бархатистою текстурою і вершковим післясмаком, що запам'ятовується. Цукор у такій каві не додається, розливають його за допомогою охолодної станції – а отже, кава не втрачає свого збалансованого смаку.
+                    Серед видом нітро-кави виділяють кавові коктейлі та кавовий квас. Для коктейлів на основі нітро-кави як додаткові інгредієнти використовують молоко та карамель. Так виходить нітро-латте та нітро-раф. На смак – ванільне морозиво, що трохи підтанула, з кавовими нотками і щільною пінкаю.
+                    Кавовий квас – це кава, цукровий сироп та натуральна маракуйя. Смак незабутній і особливо актуальний з настанням теплого весняно-літнього сезону.
+                </p>
+            </div>
+
+            <div id="Yellow" class="tabcontent">
+                <h3>Джезва, або кава в турці</h3>
+                <p>
+                    Джезва – традиційний посуд у вигляді ковша для приготування кави. Вона має унікальну форму: розширюється в нижній частині та звужується догори. Дуже важливо, щоб джезва була з міді, тому що в мідному посуді вода прогрівається рівномірно і повільніше остигає.
+                </p>
+            </div>
+
+            <div id="Oolong" class="tabcontent">
+                <h3>Пріоритет домашнього заварювання</h3>
+                <p>
+                    Усі методи, від яких у 2010-х роках люди добряче втомилися – гейзерні кавоварки, фільтр, вирви та навіть автоматичні та напівавтоматичні домашні кавоварки – набули другого дихання. Сьогодні на кавових виставках гості з цікавістю пробують каву, зварену без допомоги еспресо-машини. Тренд підтримують кавоварки De'Longhi, презентуючи своїм споживачам все новіші та сучасніші дизайнерські, технічні рішення.
+                    Це не означає, що люди перестали ходити до кав'ярень – якраз навпаки. Сьогодні гості не просто замовляють латте чи американо і сідають у зал, вони розпитують бариста про зерно для еспресо, цікавляться, як правильно заварювати фільтр, відкриті експериментам та пробують різну кавову альтернативу – від аеропресу до кемексу. А потім застосовують отримані знання вдома, набуваючи кавового обладнання на власну кухню. 
+                </p>
+            </div>
+
+            <div id="Puerh" class="tabcontent">     
+                <h3>Время экспериментов</h3>
+                <p>
+                    Сьогодні гостям кав'ярень постійно хочеться спробувати щось нове. І кавовий світ намагається встигнути за цією потребою, задовольнити її повною мірою. Зазвичай смакові тренди з'являються після кавових чемпіонатів, коли хтось із фіналістів запропонував абсолютно нове прочитання класичного напою або створив власний рецепт чогось, що раніше світ не куштував. Але загалом, тенденції зводиться до того, щоб використовувати каву та інгредієнти, що підкреслять її смак. Увага приділяється смакоароматиці кави, а не простому додаванню в напій сиропу (навіть найвишуканішої та натуральної).
+                </p>
+            </div>
+            <br>
+        </section>
+        <footer>
+            <div class="oneFooter">
+                <h2>Navigation</h2>
+                <br>
+                <ul>
+                    <li><a class="ahref" href="/index.html">Home</a></li>
+                    <li><a class="ahref" href="/news.html">News</a></li>
+                    <li><a class="ahref" href="/pages/tea/main-tea.html">Tea</a></li>
+                    <li><a class="ahref" href="/pages/coffe/main-coffe.html">Coffe</a></li>
+                    <li><a class="ahref" href="/pages/coctails/main-coctails.html">Coctails</a></li>
+                    <li><a class="ahref" href="/pages/alcohol/main-alcohol.html">Alcohol</a></li>
+                </ul>
+            </div>
+            <div class="twoFooter">
+                <h2>Contact</h2>
+                <br>
+                <ul>
+                    <li>Номер телефона: +380 123 345 6789<br></li>
+                    <li>Пошта: test@gmail.com</li>
+                    <li>Адрес головного офісу:<br><a class="ahref" href="https://maps.app.goo.gl/HvoX8pzNu5vu9Qse7">1600
+                            Pennsylvania Avenue NW, Washington, DC 20500, США</a></li>
+                </ul>
+            </div>
+            <div class="threeFooter">
+                <img src="/img/tea-logo.png" alt="footer-logo">
+            </div>
+        </footer>
+    </main>
+    <script src="/script.js"></script>
 </body>
 </html>
