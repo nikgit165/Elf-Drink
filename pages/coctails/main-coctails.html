@@ -1,12 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/pages/tea/style-coctails.css">
+    <title>Elf Drinks - Tea</title>
+    <link rel="stylesheet" href="/pages/tea/style-tea.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-    Coctails
+    <main>
+        <header>
+            <div class="nav">
+                <nav>
+                    <div class="navbar">
+                        <a href="/index.html">Home</a>
+                        <a href="/news.html">News</a>
+                        <div class="dropdown"><!-- tea -->
+                            <button class="dropbtn" onclick="redirectToTea()">Tea
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Black Tea</a>
+                                <a href="#">White Tea</a>
+                                <a href="#">Green Tea</a>
+                            </div>
+                        </div>
+                        <div class="dropdown"> <!-- coffe -->
+                            <button class="dropbtn" onclick="redirectToCoffe()">Coffe
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Latte</a>
+                                <a href="#">Cappuccino</a>
+                                <a href="#">Macchiato</a>
+                            </div>
+                        </div>
+                        <div class="dropdown"><!-- coctails -->
+                            <button class="dropbtn" onclick="redirectToCoctails()">Coctails
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Old Fashioned</a>
+                                <a href="#">Negroni</a>
+                                <a href="#">Daiquiri</a>
+                            </div>
+                        </div>
+                        <div class="dropdown"><!-- alcohol -->
+                            <button class="dropbtn" onclick="redirectToAlcohol()">Alcohol
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Old Fashioned</a>
+                                <a href="#">Negroni</a>
+                                <a href="#">Daiquiri</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="slider">
+                <img class="headerimg" src="/img/land/tealand (3).jpg" alt="tea land">
+                <div class="logo"><img class="img-logo" src="/img/tea-logo.png" alt="Logo-tea"></div>
+            </div>
+        </header>
+        <section class="ShortInfo">
+            <h1>Коротка інформація про нас</h1>
+            <div class="s1">
+                <p>
+                    Elf Drinks - це мережа барів, де ви можете насолоджуватися різноманітними напоями у чарівній атмосфері.
+                    Наші бари пропонують широкий вибір коктейлів, від класичних до авторських, які задовольнять навіть найвибагливіших гостей.
+                    Наші бармени-ельфи майстерно змішують інгредієнти, створюючи неповторні смакові враження, а обслуговування на рівні відповідає найвищим стандартам гостинності.
+                    Незалежно від того, чи ви шукаєте місце для романтичного побачення, дружнього вечора або просто відпочинку після важкого дня, Elf Drinks - ідеальне місце для вас.
+                    Завітайте до нас і відчуйте справжню ельфійську чарівність у кожному ковтку!
+                </p>
+                <img src="/img/sections_img/bar_1.png" alt="s1-img" class="s1-img">
+            </div>
+            <div class="s2">
+                <p>
+                    Крім того, у наших барах ви зможете насолоджуватися не лише вишуканими коктейлями, але й приємною музикою та розважальними заходами.
+                    Ми часто організовуємо вечори живої музики, коктейльні дегустації та тематичні вечірки, щоб кожен візит у Elf Drinks став для вас незабутнім враженням.
+                    Наші заклади розташовані у зручних локаціях з привабливим інтер'єром та дружнім персоналом, завдяки чому ви завжди зможете відчути себе комфортно та зірваною з реальності. 
+                    Приходьте до Elf Drinks і дозвольте собі трошки магії у вашому житті!
+                </p>
+                <img src="/img/sections_img/bar_2.jpg" alt="s1-img" class="s2-img">
+            </div>
+        </section>
+        <br>
+        <section class="Drinks">
+            <p class="Drinks" id="Drinks">Що ми пропонуемо</p>
+            <div class="cards">
+                <div class="Tea">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/cocktails.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Tea</h2>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Coffe">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/cocktails2.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Coffe</h2>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Coctails">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/cocktails3.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Coctails</h2>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Alcohol">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/sections_drinks/cocktails4.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Alcohol</h2>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="TabDrinks">
+            <p class="tabMainText">6 основних видів коктейл </p>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Black')">Класифікація коктейлів з погляду часу вживання</button>
+                <button class="tablinks" onclick="openTab(event, 'White')">Класифікація коктейлів за міцністю та розміром</button>
+                <button class="tablinks" onclick="openTab(event, 'Green')">Класифікація коктейлів за смаковими якостями (кисло-солодко)</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="Black" class="tabcontent">
+                <h3>Класифікація коктейлів з погляду часу вживання</h3>
+                <p>
+                    Це дуже велика група коктейлів, роль яких – порушити апетит та в результаті покращити травлення. Їх подають до їжі і, як правило, до їх складу входять міцні спиртні напої. Залежно від культури харчування, аперитиви існують у двох варіантах:
+                </p>
+                <ul>
+                    <br>
+                    <li>
+                        <a>Классические аперитивы. Здесь можно выделить подобного рода коктейли: Dry Martini (Сухой мартини), Manhattan (Манхэттен), а также Kir (Кир).</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a>Аперитиви середземноморської Європи. У цих коктейлях найчастіше використовуються вермути та бітери. Я вже писав про один такий аперитив — Negroni (Негроні), сюди ж можна віднести і Americano (Американо).</a>
+                    </li>
+                </ul>
+                <br>
+                <!-- ---------------------------------------- -->
+                <h3>В будь-який час</h3>
+                <p> 
+                    Ця група коктейлів подається після їжі (After Dinner Cocktails), як правило, у них дуже великий вміст цукру, у тому числі і з кавою. Яскравими представниками цієї групи є коктейлі White Russian (Білий Російський) та Alexander (Олександр).
+                </p>
+                <!-- ---------------------------------------- -->
+                <br>
+                <h3>Класифікація коктейлів з погляду часу вживання</h3>
+                <p>
+                    Міжнародна Барна Організація називає такі коктейлі Any Time Drinks, тобто подавати їх можна будь-коли, незалежно від подачі їжі. Сюди входять short drinks (Gimlet (Джимлет), Іржавий цвях (Rusty Nail) або Margarita (Маргарита)), а також long drinks (Gin Fizz (Джин Фізз), Screwdriver (Викрутка), Лонг Айленд Айс Ті (Long Island Iced Tea)) або Tequila Sunrise (Текіла Санрайз), як ви здогадалися, це один з найпопулярніших гуртів, який користується великою популярністю в нічних клубах та інших масових заходах.
+                </p>
+            </div>
+
+            <div id="White" class="tabcontent">
+                <h3>Класифікація коктейлів за міцністю та розміром</h3>
+                <p>
+                    Загалом, коктейлі ще класифікують за загальною міцністю та обсягом подачі:
+                    <br>
+                    <li>Hot Drinks - гарячі напої або зігрівають. Об'єм (від 60 мл) та міцність (від 12 до 35% об.) можуть бути різними.</li>
+                    <li>Long Drinks – довгі напої. Від 160 до 300 мл при міцності від 7 до 17% об.</li>
+                    <li>Short Drinks – короткі напої. Від 60 до 160 мл при міцності від 17 до 45% об.</li>
+                    <li>Shot Drinks – славні шоти. Їх ще називають "глотки" або shooters (шутери): від 40 до 60 мл при різній фортеці. П'ються залпом, а дехто для краси підпалюється.</li>
+                </p>
+            </div>
+
+            <div id="Green" class="tabcontent">
+                <h3>Класифікація коктейлів за смаковими якостями (кисло-солодко)</h3>
+                <p>
+                    Дуже тонка класифікація, тому рідко де можна побачити. Я використовую на блозі найчастіше перший вид класифікації, але все ж таки корисно знати і наступне:
+                    <li>Дейзі (Daisy) – short drink, що складається з одного спиртного напою, лимонного соку, цукру та сиропу «Гренадін». Як правило, подається в келиху олд-фешн, прикрашеним кружком апельсина та вишнею.</li>
+                    <br>
+                    <li>Коллінзи - готуються в знаменитому келиху collins, який є одним з різновидів хайболів (highball) - над посудом я поки працюю, так що скоро зможете побачити всі його різновиди. До складу таких коктейлів входять один спиртний напій, лимонний сік, цукор, содова та лід. Також вони є класичними long drink, а як приклад досить навести знаменитий коктейль Коллінз (John Collins).</li>
+                    <br>
+                    <li>Коблери та Кулери – майже Коллінзи, тільки до складу не додається чи цукор, чи лимонний сік, чи те й інше. Кулери - це спиртний напій, який подається з газуванням і льодом (Джин-тонік або Бетон), або з імбирним елем. А ось Коблери подаються ще й з колотою кригою (фарбою), а також фруктами;</li>
+                    <br>
+                    <li>Сауери (Sour) – кислі коктейлі. Про них я вже писав, коли описував коктейль Whiskey Sour (Віскі Сауер).</li>
+                    <br>
+                    <li>Слінги - великий вміст лимонного соку в поєднанні зі спиртним напоєм, содовою та ложечкою цукру. Яскравий представник – Сінгапур Слінг, лише замість цукру сюди йде вишневий бренді.</li>
+                    <br>
+                    <li>Суїзли – це лонг-дринки, до яких входять бітери.</li>
+                    <br>
+                    <li>Фіззи - до складу коктейлів входить сильногазована вода (to fizz з англійської - "шипіти"). А заливається «шипучкою» збиті в шейкері лимонний сік, цукор та спиртний напій. Подаються у хайболі. Яскравий представник - Джин Фізз.</li>
+                    <br>
+                    <li>Фікси – ні чим не розбавлені коктейлі, до складу яких входять міцні алкогольні напої, лікери, сиропи чи вина. Готує їх дуже швидко: на 2/3 колодою кригою наповнюється колінз і вливаються всі інгредієнти - прикрашаються часточкою лимона.</li>
+                </p>
+            </div>
+
+            <br>
+        </section>
+        <footer>
+            <div class="oneFooter">
+                <h2>Navigation</h2>
+                <br>
+                <ul>
+                    <li><a class="ahref" href="/index.html">Home</a></li>
+                    <li><a class="ahref" href="/news.html">News</a></li>
+                    <li><a class="ahref" href="/pages/tea/main-tea.html">Tea</a></li>
+                    <li><a class="ahref" href="/pages/coffe/main-coffe.html">Coffe</a></li>
+                    <li><a class="ahref" href="/pages/coctails/main-coctails.html">Coctails</a></li>
+                    <li><a class="ahref" href="/pages/alcohol/main-alcohol.html">Alcohol</a></li>
+                </ul>
+            </div>
+            <div class="twoFooter">
+                <h2>Contact</h2>
+                <br>
+                <ul>
+                    <li>Номер телефона: +380 123 345 6789<br></li>
+                    <li>Пошта: test@gmail.com</li>
+                    <li>Адрес головного офісу:<br><a class="ahref" href="https://maps.app.goo.gl/HvoX8pzNu5vu9Qse7">1600
+                            Pennsylvania Avenue NW, Washington, DC 20500, США</a></li>
+                </ul>
+            </div>
+            <div class="threeFooter">
+                <img src="/img/tea-logo.png" alt="footer-logo">
+            </div>
+        </footer>
+    </main>
+    <script src="/script.js"></script>
 </body>
 </html>
